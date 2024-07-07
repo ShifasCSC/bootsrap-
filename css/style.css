@@ -16,6 +16,7 @@
 
 .nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: rgb(251, 249, 249);
     background-color: rgb(85, 85, 82);
@@ -24,6 +25,7 @@
 .right{
     margin:0px 10px 0px 10px;
     display: flex;
+    flex-wrap: wrap;
     /* justify-content:space-evenly; */
     align-items: center;
 }
@@ -54,6 +56,7 @@
 /* second allen nav */
 .bar{
     display: flex;
+    flex-wrap: wrap;
     color: #032b6b;
     justify-content: space-evenly;
     align-items: center;
@@ -63,13 +66,22 @@
 .order{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     
 }
 .order>li{
     margin: 0px 10px 0px 10px;
 }
 .srch{
+    font-size: large;
+    margin-right: 100px;
+    border-bottom: rgb(48, 48, 176) 1px solid groove;
     text-decoration: underline;
+    
+}
+.search{
+    font-size:large;
+    
 }
 .solly{
     width: 10%;
@@ -77,6 +89,14 @@
 }
 
 /* nav end */
+.slide1>img{
+    height: 50vh;
+
+}
+/* .slide1{
+    height: 50%;
+    
+} */
 
 
 /* profile */
@@ -84,11 +104,14 @@
 .profile{
 
     display: flex;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    
+    justify-content:space-evenly;
+    
 }
 .prof{
-    text-align: center;
+   align-items : center;
+   text-align: center;
 }
 .prof>img{
     width: 200px;
@@ -96,7 +119,369 @@
     border-radius: 100%;
     object-fit: cover;
 }
+/* banner */
+.parent{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,2fr);
+    background-color:#f5d069 ;
+    justify-content: space-evenly;
+    
+}
+/* qr code */
+.code{
+    width: 10%;
+    height: 65%;
+}
+/* br */
+.break{
+   margin: 0px 50px 0px 0px; 
+}
+/* collections */
+.collections{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.coll{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.coll>li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 100%;
+
+}
+.coll>li:hover{
+    text-decoration: underline;
+    
+}
+.colimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.card{
+    text-align: center;
+    border-radius:0PX 20PX 0PX 20PX;
+}
+
+.card>img{
+    height: 300px;
+    width: 250px;
+}
+.slide2{
+    border-radius:0PX 20PX 0PX 0PX;
+    height: 100%;
+    width: 100%;
+}
+
+/* COLLection end */
+
+/* white shirt and logo */
+
+.master{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* background-color: #f5d069; */
+    margin-top: 90px;
+    /* position: relative; */
+    
+}
+.slave1{
+    /* margin: 0% 6% 15% 5%; */
+    height: 490px;
+    width: 590px;
+    /* position: absolute; */
+    /* z-index: 0; */
+}
+.slave1>img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #f5d069;
+}
+.slave2{
+    /* margin-left: 100px; */
+    height: 390px;
+    width: 390px;
+    margin:9% 0% 0% 15%;
+    /* z-index:-1; */
+    position: absolute;
+}
+.slave2>img{
+    /* object-fit: cover; */
+    height: 100%;
+    width: 100%;
+}
+.slave3{
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,auto); */
+    background-color: #f9da86;
+    border-radius: 6px;
+    height: 55vh;
+    width: 40%;
+    margin: 10% 0% 0% -13%;
+    /* position: absolute; */
+    z-index: 1;
+}
+.moon{
+    width: 30%;
+    text-align: center;
+    margin: 10px 180px;
+}
+.kid{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 0% 0% 0% 30%;
+/* align-items: center; */
+    border: 1px solid black;
+}
+.c3{
+margin: 12px 10px;
+    background-color: white;
+    color: #032b6b;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+.c2{
+    background-color: white;
+    color: #032b6b;
+    border-radius: 5px;
+    padding:5px 5px ;
+    
+}
+.c1{
+    background-color: white;
+    color: #032b6b;
+    border-radius: 5px;
+    padding: 5px 24px;
+}
+.c4{
+    background-color: white;
+    color: #032b6b;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+/* trending style list */
+.father{
+    margin: 5% 0% 0% 0%;
+    background-color: #032b6b;
+    height: 160vh;
+    width: 100%;
+
+}
+.trends{
+    text-align: center;
+    padding:5% 0% 2% 0% ;
+}
+.tlist{
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+.tlist>li{
+    margin: 25px;
+}
+.tlist>li:hover{
+    text-decoration:2px underline #f9da86;
+
+}
+.trendy{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.trend{
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+
+}
+.trend>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.polo{
+    display: flex;
+    list-style: none;
+    
+}
+.polo>li{
+    margin:0px 10px 0px 0px;
+}
+.polo>h6{
+    margin-top: 2px;
+}
+.price{
+    text-decoration: line-through;
+}
+.offeri{
+    color: red;
+}
+/* end */
+
+/* left chair right list pic */
+.chair{
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 11px 11px 0px 0px;
+    width: 460px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: #032b6b;
+}
+.home{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.home>img{
+    width: 100%;
+    height: 100%;
+}
+.deer{
+    margin:6% 0% 0% 24%;
+}
+.one{
+    margin:-9% 0% 0% 36%;
+
+}
+.don{
+    text-decoration: underline burlywood;
+    margin: 0% 0% 0% 36%;
+    font-size: 20px;
+}
+.clothes>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.clothes{
+    margin-top: 10%;
+    display: flex;
+    height: 300px;
+    width: 700px;
+    list-style: none;
+}
+.clothes>li{
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+.man{
+    display: flex;
+}
+.old{
+    text-decoration: line-through;
+}
+
+/* end */
+
+/* background image second last section */
+.last{
+    margin-top: 30px;
+    
+    background-image: url(/close-up-arrangement-with-camera-grass-medium1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    flood-opacity: 50%;
+    opacity: 90%;
+    
+}
+.up{
+    color: #032b6b;
+    margin:35px 0px 0px 490px;
+    padding: 40px 0px 0px 40px;
+    width: 50%;
+    height: 59%;
+    background-color: gold;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 200%;
+
+}
+.icon{
+    top: 10px;
+    left: 20px;
+    
+}
+.enter{
+    margin-left: 25%;
+    padding: 3% 15%;
+    background-color: #032b6b;
+    color: gold;
+    border-radius: 20px;
+    border: none;
+
+}
+.enter:hover{
+    scale: 0.9;
+}
+
+.blue{
+    margin-top: 5%;
+    background-color: #032b6b;
+    height: 23vh;
+    width: 100%;
+    color: rgb(251, 248, 248);
+    padding: 19px 250px 19px 250px;
+    
+}
+.gift{
+    left: 170px;
+    position: absolute;
+    size: 40px;
+
+}
+.yel{
+    color: gold;
+}
+/* last div */
+.div1{
+    margin-top: 5%;
+    background-color: gold;
+}
+.gif{
+    margin-left: 25%;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:576.98px) and (max-width:991.98px){
+    .main{
+        font-size: 50px;
+    }
+}
+@media (min-width:991.98px) and (max-width:1199.98px){
+    .main{
+        font-size:150px ;
+
+    }
+}
